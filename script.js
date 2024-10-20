@@ -63,11 +63,17 @@ let gradeCalculator = function (sub, subgrade) {
 
   let average = total / totalSubValue;
 
-  if (subgrade.innerHTML === "F") {
+  if (banglaGrade.innerHTML == "F" ||
+    englishGrade.innerHTML == "F" ||
+    mathGrade.innerHTML == "F" ||
+    socialScienceGrade.innerHTML == "F" ||
+    scienceGrade.innerHTML == "F" ||
+    religionGrade.innerHTML == "F") {
     cgpa.innerHTML = "Fail";
   } else {
     gradeFinder(average, cgpa);
   }
+  
 };
 
 submit.addEventListener("click", (e) => {
