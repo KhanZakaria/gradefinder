@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .inputGrade {
+    @apply w-[500px] flex gap-4 my-1 items-center justify-between py-2 px-4 rounded-sm;
+  }
+  .inputField {
+    @apply border rounded-full border-[#16a085] px-4 py-2 text-[18px] outline-none text-[#463be5] font-bold;
+  }
+  .gradeClass {
+    @apply border border-[#16a085] rounded-sm px-[10px] py-[5px] shadow-md shadow-[#16a085];
+  }
+}

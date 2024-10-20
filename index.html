@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./src/output.css"
+    />
+  </head>
+  <body>
+    <div class="bg-black text-white pb-[50px] px-[5px]">
+      <h1 class="text-[45px] text-white text-center">Grade Calculator</h1>
+      <h2 class="text-[30px] text-white text-center">
+        Enter Your Marks To Calculate Grade
+      </h2>
+
+      <div class="flex justify-evenly gap-2 py-[20px]">
+        <div class="border border-[#16a085] p-[20px]">
+          <h2 class="text-[30px]">Grade Distribution</h2>
+          <div
+            class="flex justify-between gap-[5px] border border-[#16a085] p-[10px] mt-[20px]"
+          >
+            <div>
+              <h2>Grade</h2>
+              <p>A+</p>
+              <p>A</p>
+              <p>A-</p>
+              <p>B</p>
+              <p>C</p>
+              <p>D</p>
+              <p>F</p>
+            </div>
+            <div>
+              <h2>Scale</h2>
+              <p>5.0</p>
+              <p>4.0-4.99</p>
+              <p>3.50-3.99</p>
+              <p>3.00-3.49</p>
+              <p>2.00-2.99</p>
+              <p>1.00-1.99</p>
+              <p>0.00-0.99</p>
+            </div>
+            <div>
+              <h2>Marks</h2>
+              <p>80.00-100</p>
+              <p>70.00-79.99</p>
+              <p>60.00-69.99</p>
+              <p>50.00-59.99</p>
+              <p>40.00-49.99</p>
+              <p>33.00-39.99</p>
+              <p>0.00-32.99</p>
+            </div>
+          </div>
+          <p>
+            The Above Grade System are most standard system by Education System
+            of Bangladesh
+          </p>
+        </div>
+        <form
+          class="gradeform flex flex-col items-center justify-center border border-[#16a085] rounded-md p-[10px]"
+        >
+          <div class="inputGrade">
+            <div class="flex justify-between w-full text-[20px] pr-6">
+              <div>Subject</div>
+              <div>Mark</div>
+            </div>
+            <div class="text-[20px]">Grade</div>
+          </div>
+          <!-- Input for bangla Start -->
+          <div class="inputGrade">
+            <div class="flex justify-between w-full">
+              <label
+                for="bangla"
+                class="text-[20px]"
+                >Bangla</label
+              >
+              <input
+                type="number"
+                id="bangla"
+                class="inputField"
+                min="0"
+                max="100"
+              />
+            </div>
+            <div class="gradeClass">
+              <h2
+                class="banglaGrade text-[20px] min-w-[30px] min-h-[30px] text-center"
+              ></h2>
+            </div>
+          </div>
+          <!-- Input for bangla End -->
+
+          <!-- Input for english Start -->
+          <div class="inputGrade">
+            <div class="flex justify-between w-full">
+              <label
+                for="english"
+                class="text-[20px]"
+                >English</label
+              >
+              <input
+                type="number"
+                id="english"
+                class="inputField"
+                min="0"
+                max="100"
+              />
+            </div>
+            <div class="gradeClass">
+              <h2
+                class="egrade text-[20px] min-w-[30px] min-h-[30px] text-center"
+              ></h2>
+            </div>
+          </div>
+          <!-- Input for english End -->
+
+          <!-- Input for math Start -->
+          <div class="inputGrade">
+            <div class="flex justify-between w-full">
+              <label
+                for="math"
+                class="text-[20px]"
+                >Math</label
+              >
+              <input
+                type="number"
+                id="math"
+                class="inputField"
+                min="0"
+                max="100"
+              />
+            </div>
+            <div class="gradeClass">
+              <h2
+                class="mgrade text-[20px] min-w-[30px] min-h-[30px] text-center"
+              ></h2>
+            </div>
+          </div>
+          <!-- Input for math End -->
+
+          <!-- Input for socialScience Start -->
+          <div class="inputGrade">
+            <div class="flex justify-between w-full">
+              <label
+                for="socialScience"
+                class="text-[20px]"
+                >Social Science</label
+              >
+              <input
+                type="number"
+                id="socialScience"
+                class="inputField"
+                min="0"
+                max="100"
+              />
+            </div>
+            <div class="gradeClass">
+              <h2
+                class="ssgrade text-[20px] min-w-[30px] min-h-[30px] text-center"
+              ></h2>
+            </div>
+          </div>
+          <!-- Input for socialScience End -->
+
+          <!-- Input for Science Start -->
+          <div class="inputGrade">
+            <div class="flex justify-between w-full">
+              <label
+                for="science"
+                class="text-[20px]"
+                >Science</label
+              >
+              <input
+                type="number"
+                id="science"
+                class="inputField"
+                min="0"
+                max="100"
+              />
+            </div>
+            <div class="gradeClass">
+              <h2
+                class="sgrade text-[20px] min-w-[30px] text-center min-h-[30px]"
+              ></h2>
+            </div>
+          </div>
+          <!-- Input for socialScience End -->
+          <!-- Input for religion Start -->
+          <div class="inputGrade">
+            <div class="flex justify-between w-full">
+              <label
+                for="religion"
+                class="text-[20px]"
+                >Religion</label
+              >
+              <input
+                type="number"
+                id="religion"
+                class="inputField"
+                min="0"
+                max="100"
+              />
+            </div>
+            <div class="gradeClass">
+              <h2
+                class="rgrade text-[20px] min-w-[30px] min-h-[30px] text-center"
+              ></h2>
+            </div>
+          </div>
+          <!-- Input for religion End -->
+
+          <input
+            type="submit"
+            value="calculate"
+            id="submit"
+            class="px-8 py-2 mt-3 mb-3 border border-[#ffffff] rounded-full shadow-md shadow-[rgb(22,160,133,.2)] text-[24px] text-[#16a085] hover:text-[green] hover:cursor-pointer"
+          />
+        </form>
+        <div class="border border-[#16a085] p-[50px] min-w-[350px]">
+          <h2 class="text-[30px]">Details</h2>
+          <h3 class="text-[25px]">
+            Total Marks : <span class="totalmark text-[#3be5c0]"></span>
+          </h3>
+          <h3 class="text-[25px]">
+            Total Subject : <span class="totalSub text-[#3be5c0]"></span>
+          </h3>
+          <h3 class="text-[25px]">
+            Grade : <span class="cgpa text-[#3be5c0]"></span>
+          </h3>
+          <h3 class="text-[25px] text-[#FFD700] hidden">
+            Congratulation You Got : <span class="finalCgpa"></span>
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
